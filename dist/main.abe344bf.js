@@ -198,21 +198,33 @@ window.onbeforeunload = function () {
 
 $(function () {
   $('.searchGet').bind('input porpertychange', function () {
+    $(document).unbind('keydown');
     $('.clearSearch').show();
+
+    if ($('.searchGet').val() === '') {
+      $('.clearSearch').hide();
+    }
   });
   $('.clearSearch').on('click', function () {
     $('.searchGet').val('');
     $('.clearSearch').hide();
+    keyPress();
   });
 }); //键盘事件
 
-$(document).on('keypress', function (e) {
-  //const e = e.key 简写为下方代码
-  var key = e.key;
+var keyPress = function keyPress() {
+  $(document).on('keydown', function (e) {
+    //const key = e.key 简写为下方代码
+    var key = e.key;
 
-  for (var i = 0; i < hashMap.length; i++) {
-    window.open(hashMap[i].url, '_self');
-  }
-});
+    for (var i = 0; i < hashMap.length; i++) {
+      if (hashMap[i].logo === key) {
+        window.open(hashMap[i].url, '_self');
+      }
+    }
+  });
+};
+
+keyPress();
 },{"cluster":"ALLQ"}]},{},["epB2"], null)
-//# sourceMappingURL=main.25f53867.js.map
+//# sourceMappingURL=main.abe344bf.js.map

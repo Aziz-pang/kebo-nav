@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <!-- 初始化css样式，文档链接：https://yuilibrary.com/yui/docs/cssreset/ -->
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="//cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- iconfont图标：https://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=2112907 -->
+    <script src="//at.alicdn.com/t/font_2112907_wdrkvs9y0w.js"></script>
+    <link rel="stylesheet" href="csshake/dist/csshake.css">
+    <title>Document</title>
+</head>
+<body class="appLayout">
+    <header class="search">
+        <svg class="icon searchLogo">
+            <use xlink:href="#icon-google"></use>
+        </svg>
+        <form class="searchFrom" action="https://www.google.com/search" method="get">
+        <input class="searchGet" name="q" placeholder="搜索">
+        <svg class="icon clearSearch" style="display: none;">
+            <use xlink:href="#icon-delete"></use>
+        </svg>
+        </form>
+        
+    </header>
+    <main class="site-cantianer">
+        <div class="tab-title">
+            <span>个人收藏</span> 
+            <aside class="buttons">
+                <span class="addButton">
+                    <svg class="icon">
+                        <use xlink:href="#icon-add"></use>
+                    </svg>
+                </span>
+                <span class="delButton">
+                    <svg class="icon">
+                        <use xlink:href="#icon-remove"></use>
+                    </svg>
+                </span>
+            </aside>
+        </div>
+        <ul class="siteList">
+            <!-- <li class="sites columnMiddle">
+                <a href="//apple.cn" class="columnMiddle">
+                <div class="logo columnMiddle">A</div>
+                <span class="site-name">apple</span>
+                </a>
+            </li>-->
+        </ul>
+    </main>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

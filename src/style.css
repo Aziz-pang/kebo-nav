@@ -1,0 +1,113 @@
+html{background: #f2f2f2;color: #212137;}
+*{padding:0;margin:0;box-sizing: border-box;}
+a{text-decoration: none;color: inherit;}
+::-webkit-input-placeholder {color:  rgba(33,33,55,0.3);}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+.search{
+    margin: 32px 18px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+.search .icon{
+    font-size: 28px;
+    margin: auto 12px;
+}
+.searchFrom{
+    display: flex;
+    width: 100%;
+}
+.searchGet{
+    border: none;
+    color: rgba(33,33,55,0.87);
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+    background: transparent;
+}
+.site-cantianer{
+    margin-left: 18px;
+    margin-right: 18px;
+}
+.tab-title{
+    color: rgba(33,33,55,0.87);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    line-height: 26px;
+}
+.buttons{
+    position: absolute;
+    right: 0;
+}
+.buttons .icon{
+    font-size: 26px;
+    margin-left: 4px;
+}
+.columnMiddle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.opacity{
+    opacity: 0.5;
+}
+.siteList{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: -12px;
+}
+.siteList .logo{
+    font-size: 32px;
+    color: white;
+    background: #9296A1;
+    border-radius: 8px;
+    min-width: 70px;
+    min-height: 70px;
+    box-shadow: 0px 4px 8px rgba(33, 33, 55, 0.08);
+}
+.sites{
+    margin-right: 12px;
+    cursor: pointer;
+}
+.site-name{
+    font-size: 16px;
+    color: rgba(33,33,55,0.6);
+    margin-top: 4px;
+    margin-bottom: 18px;
+    max-width: 68px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+@media (min-width:800px){
+    .appLayout{
+        max-width: 800px;
+        margin: 0 auto;
+        padding-top: 120px;
+    }
+    .search{
+        max-width: 552px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .siteList{
+        justify-content: flex-start;
+        margin-right: -34px;
+    }
+    .sites{
+        margin-right: 29px;
+    }
+}

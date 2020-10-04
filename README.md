@@ -1,4 +1,4 @@
-# 标题
+# 浏览地址
 🛑🛑 效果预览地址 ↓  
 
 https://aziz-pang.github.io/kebo-nav/dist/index.html
@@ -24,7 +24,11 @@ yarn init -y
     "build":"rm -rf dist && parcel build src/index.html --no-minify --public-url ./"
   },
 ```
+
+添加完以上的代码即可，一键发布
+```sh
 yarn build
+```
 
 ## 删除时抖动效果
 

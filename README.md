@@ -14,6 +14,16 @@ parcel src/index.html
 ```sh
 parcel build src/index.html --no-minify --public-url . 
 ```
+
+## 一键发布
+```sh
+#初始化
+yarn init -y
+#添加脚本
+"scripts": {
+    "build":"rm -rf dist && parcel build src/index.html --no-minify --public-url ./"
+  },
+```
 yarn build
 
 ## 删除时抖动效果
